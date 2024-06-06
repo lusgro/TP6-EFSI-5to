@@ -2,7 +2,7 @@ import AttributeCita from '../AttributeCita'
 import BtnEliminar from '../BtnEliminar'
 import useCitas from '@/hooks/useCitas'
 
-import './containercita.css'
+import './ContainerCita.css'
 
 const ContainerCita = (props) => {
     const { citas, setCitas } = useCitas()

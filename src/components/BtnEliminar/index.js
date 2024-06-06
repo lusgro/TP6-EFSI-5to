@@ -1,7 +1,7 @@
-import './btneliminar.css'
+import './BtnEliminar.css'
 
-const btnEliminar = (props) => {
+const BtnEliminar = (props) => {
     return <button className="eliminar" onClick={props.onClick}>Eliminar</button>
 }
 
-export default btnEliminar
+export default BtnEliminar

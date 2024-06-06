@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import './attributecita.css'
+import './AttributeCita.css'
 
-const attributeCita = (props) => {
+const AttributeCita = (props) => {
     return (
         <Fragment>
             <p className="attribute">
@@ -12,4 +12,4 @@ const attributeCita = (props) => {
     )
 }
 
-export default attributeCita
+export default AttributeCita

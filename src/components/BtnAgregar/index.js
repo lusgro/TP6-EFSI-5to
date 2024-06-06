@@ -1,7 +1,7 @@
-import "./btnagregar.css";
+import "./BtnAgregar.css";
 
-const BtnAgregarCita = () => {
+const BtnAgregar = () => {
     return <button className="agregar button-primary">Agregar Cita</button>
 }
 
-export default BtnAgregarCita;
+export default BtnAgregar;

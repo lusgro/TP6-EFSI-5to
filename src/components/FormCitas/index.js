@@ -1,7 +1,6 @@
 import useCitas from "@/hooks/useCitas";
-
 import InputCita from "../InputCita";
-import BtnAgregarCita from "../BtnAgregar";
+import BtnAgregar from "../BtnAgregar";
 import Cita from "@/models/Cita";
 
 const FormCitas = () => {
@@ -29,7 +28,7 @@ const FormCitas = () => {
             <InputCita type="date" name="fecha" label="Fecha" />
             <InputCita type="time" name="hora" label="Hora" />
             <InputCita type="textbox" name="sintomas" label="Sintomas" />
-            <BtnAgregarCita />
+            <BtnAgregar />
         </form>
     )
 }
