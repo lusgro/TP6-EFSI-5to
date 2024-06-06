@@ -1,5 +1,3 @@
-import './inputcita.css'
-
 const InputCita = (props) => { 
     return(
         <>

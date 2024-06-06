@@ -1,12 +1,11 @@
-import { useContext } from "react";
+import useCitas from "@/hooks/useCitas";
 
-import CitaContext from "@/CitaContext";
 import InputCita from "../InputCita";
 import BtnAgregarCita from "../BtnAgregar";
 import Cita from "@/models/Cita";
 
 const FormCitas = () => {
-    const { citas, setCitas } = useContext(CitaContext);
+    const { citas, setCitas } = useCitas()
 
     const handleSubmit = (e) => {
         e.preventDefault();

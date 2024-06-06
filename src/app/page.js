@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Title from "@/components/Title";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.title}>Bienvenido a ReservORT</h1>
+      <Title title="Bienvenido a ReservORT" h1={true} />
     </main>
   );
 }

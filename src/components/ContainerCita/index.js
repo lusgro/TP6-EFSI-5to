@@ -1,9 +1,16 @@
 import AttributeCita from '../AttributeCita'
 import BtnEliminar from '../BtnEliminar'
+import useCitas from '@/hooks/useCitas'
 
 import './containercita.css'
 
 const ContainerCita = (props) => {
+    const { citas, setCitas } = useCitas()
+    const eliminarCita = () => {
+        const newCitas = [...citas];
+        newCitas.splice(props.index, 1);
+        setCitas(newCitas);
+    }
     return (
         <div className="container">
             <AttributeCita attribute="Mascota" value={props.valueMascota} />

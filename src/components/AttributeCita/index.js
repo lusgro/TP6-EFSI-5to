@@ -4,7 +4,7 @@ import './attributecita.css'
 const attributeCita = (props) => {
     return (
         <Fragment>
-            <p>
+            <p className="attribute">
                 {props.attribute}:
                 <span> {props.value}</span>
             </p>

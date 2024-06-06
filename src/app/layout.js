@@ -1,5 +1,4 @@
-import CitaContext from "@/CitaContext";
-
+import { CitaProvider } from "@/CitaContext";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -19,11 +18,15 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="stylesheet" href={inter.url} />
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
       </head>
+      <CitaProvider>
         <body className={inter.className}>
           <Navbar />
           {children}
         </body>
+      </CitaProvider>
     </html>
   );
 }

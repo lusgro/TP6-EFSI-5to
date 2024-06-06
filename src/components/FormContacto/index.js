@@ -7,7 +7,7 @@ const FormContacto = () => {
             <input type="email" id="email" name="email" />
             <label htmlFor="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" />
-            <button type="submit">Enviar</button>
+            <button type="submit" className="button-primary">Enviar</button>
         </form>
     );
 }
