@@ -1,3 +1,5 @@
+import CitaContext from "@/CitaContext";
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -18,9 +20,9 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <link rel="stylesheet" href={inter.url} />
       </head>
-      <body className={inter.className}>
-        <Navbar />
-        {children}
+        <body className={inter.className}>
+          <Navbar />
+          {children}
         </body>
     </html>
   );
